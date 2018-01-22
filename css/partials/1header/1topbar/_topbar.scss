@@ -1,0 +1,165 @@
+/* Style for TOPBAR ===============
+==========================================*/
+
+.topBar {
+	@extend %bgColor8;
+	width: 100%;
+	.container {
+		padding: 14px 4px 37px 2px;
+		.logo {
+			display: block;
+			margin-top: 16px;
+		}
+		
+	}	
+}
+
+.rightSide {
+	@extend %textAlignRight;
+	form {
+		display: inline-block;
+		label {
+			@extend %verticalAlignTop;
+			@extend %fontSize1;
+			@extend %fontColor2;
+			margin-right: 3px;
+			margin-top: 5px;
+		}
+		&#countrySelect {
+			margin-left: 7px;
+		}
+	}
+}
+
+
+.itemCount {
+	display: block;
+	@extend %fontColor2;
+	font-size: 12px;
+	margin-top: 14px;
+	margin-right: 1px;
+	label {
+		a {
+			@extend %fontColor3;
+			margin-right: 2px;
+		}
+	}
+	a {
+		@extend %fontStrong;
+		@extend %fontColor2;
+	}
+}
+
+.dropdownSelect {
+	display: inline-block;
+	@extend %verticalAlignMiddle;
+	dt {
+		display: block;
+		@extend %fontColor1;
+		@extend %fontSize1;
+		@extend %cursorPointer;
+		@extend %bgColor1;
+		@extend %textDecorNone;
+		@extend %textAlignLeft;
+		@extend %overflowHidden;
+		@extend %borderRadius5px;
+		background: url(../images/cur-arrow.png) no-repeat;
+		width: 114px;
+		height: 27px;
+		padding: 5px 27px 5px 8px;
+		
+		a {
+			display: block;
+			@extend %bgColor1;
+			@extend %fontColor1;
+			line-height: 17px;
+			&:hover, &:focus {
+				@extend %textDecorNone;
+			}
+		}
+	}
+
+	dd {
+		@extend %positionRelative;
+		ul {
+			display: none;
+			@extend %bgColor1;
+			@extend %positionAbsolute;
+			@extend %listStyleNone;
+			@extend %borderRadius5px;
+			box-shadow: 0 1px rgba(0,0,0,0.15);
+			width: 113px;
+			padding-top: 2px;
+			margin: 3px 0 0;			
+			z-index: 999;
+			li {
+				@extend %borderRadius5px; 
+				padding: 6px 20px 4px 7px;
+				&:hover {
+					@extend %bgColor1;
+				}	
+			}
+			a {
+				display: block;
+				@extend %fontColor1;
+				@extend %cursorPointer;
+				@extend %fontSize1;
+				line-height: 12px;
+				text-align: left;
+				&:hover {
+					@extend %textDecorNone;
+				}
+			}
+		}
+	}
+}
+
+/* Responsive TopBar================================================
+===================================================================*/
+
+@media (max-width: 979px) {
+	body {
+		.container {
+			width: 100% !important;
+		}		
+	}
+	.topBar {
+		.inner {
+			padding-left: 12px;
+			padding-bottom: 10px;
+			.logo {
+				margin-top: 16px;
+			}
+			.rightSide {
+				padding-right: 10px;
+				form {
+					display: block;
+				}
+				.languages {
+					margin-top: 5px;
+				}
+				.itemCount {
+					margin-top: 7px;
+				}
+			}
+		}	
+	}	
+} 
+@media (max-width: 767px) {
+	.topBar {
+		@include linear-gradient(#000, #333, 1);
+		background-image: none;
+		background-position: 0 0;
+		.logo {
+			width: 50%;
+			img {
+				max-width: 100%;
+				min-width: 290px;
+			}
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 480px) {
+
+} 

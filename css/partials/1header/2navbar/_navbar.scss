@@ -1,0 +1,125 @@
+/* Style for NAVBAR ===============
+==========================================*/
+
+.navbar {
+	@extend %borderNone;
+	margin-bottom: 16px;
+	box-shadow: 0px 6px 8px 0px rgba( 0, 0, 1, 0.15 );
+}
+
+.nav, footer ul {
+	li {
+		display: inline-block;
+		&.active {
+			a {
+				@extend %fontColor3;
+			}
+		}
+		&.last {
+			a {
+				background-image: none;
+			}
+		}
+		a {
+			display: inline-block;
+			@extend %fontStrong;
+			@extend %fontSize2;
+			@extend %fontColor4;
+			@extend %textTransformUpper;
+			line-height: 17px;
+			padding: 22px 5px 23px 10px;
+			&:hover {
+				background-color: #fff;
+				@extend %fontColor3;
+			}
+		}
+		&.first{
+			a {
+				padding-left: 4px;
+			}
+		}
+		span {
+			display: inline-block;
+			width: 5px;
+			height: 11px;
+			margin-left: 5px;
+			background: url(../images/menu_item.gif)  no-repeat;
+		}
+	}
+}
+
+
+.navbar-toggle {
+	@extend %bgColorTransparent;
+	@extend %bgImageNone;
+	@extend %borderRadius5px;
+	@extend %borderColor1;
+	margin: 13px 10px;
+	border: 2px solid #55C3C1;
+	.icon-bar {
+		display: block;
+		border-radius: 1px;
+		width: 22px;
+		height: 2px;
+		@extend %bgColor2;
+	}
+	.icon-bar + .icon-bar {
+		margin-top: 4px;
+	}
+}
+
+
+
+/* Responsive Navbar ================================================
+===================================================================*/
+
+@media screen and (min-width: 980px) {
+	.navbar {
+		background: none;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar-collapse {
+		&.collapse {
+			display: none !important;
+			&.in {
+				display: block !important;
+			}
+		}
+	}
+
+	.navbar-header {
+		float: none;
+		.navbar-toggle {
+			display: block;
+		}
+	}
+	.navbar-collapse {
+		max-height: inherit;
+	}
+	.nav {
+		float: none !important;
+		margin: 0;
+		li {
+			width: 100%;
+			a {
+				width: 100%;
+				padding: 10px;
+				background: none;
+				&:hover {
+					background-color: #ccc;
+				}
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+} 
+@media (max-width: 767px) {
+
+}
+@media (max-width: 480px) {
+
+} 

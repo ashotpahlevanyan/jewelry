@@ -1,0 +1,122 @@
+/*================================================================
+
+	navbar.scss
+	* CSS style for navbar
+
+==================================================================*/
+
+.navbar {
+	@extend %bgColor3;
+	@extend %positionRelative;
+	margin-bottom: 0;
+	padding: 0;
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-header {
+	.navbar-toggle {
+		background: none;
+		&:hover {
+			@extend %bgColor2;
+		}
+		.icon-bar {
+			@extend %bgColor1;
+		}
+	}
+}
+
+.navbar-collapse {
+	@extend %borderResponsiveNavbar;
+	padding: 0;
+	.menu {
+		@extend %bgColor3;
+		@extend %positionRelative;
+		.border {
+			@extend %bgColor11;
+			@extend %positionAbsolute;
+			height: 5px;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+	}
+}
+
+.nav {
+	li {
+		&:hover {
+			@extend %bgColor10;
+		}
+		&.active {
+			@extend %bgColor10;
+			a, a:focus, a:hover {
+				background: transparent;
+			}
+		}
+		a {
+			@extend %fontColor1;
+			@extend %fontStrong;
+			font-size: 14px;
+			font-size: 1.4rem;
+			line-height: 20px;
+			padding-top: 9px;
+			padding-bottom: 16px;
+			&:hover, &:focus {
+				background: transparent;
+			}
+		}
+		.side {
+			@extend %bgColor2;
+			@extend %positionAbsolute;
+			@extend %borderSideNavbar;
+			width: 2px;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			&.left {
+				right: inherit;
+				left: 0;
+			}
+			&.noBorder {
+				border: none;
+				width: 1px;
+			}
+		}
+	}
+	&.secondmenu {
+		@extend %bgColor9;
+		.first {
+			@extend %borderResponsiveSecondmenu;
+		}
+	}
+}
+
+.dropdown-menu {
+	@extend %bgColor10;
+	background-clip: border-box;
+	background-color: transparent;
+	li {
+		a:hover {
+			@extend %fontColor1;
+		}
+	}
+}
+
+.submenu {
+	@extend %bgColor5;
+	@extend %fontColor1;
+	height: 42px;
+	line-height: 42px;
+	.inner {
+		padding-left: 12px;
+		a {
+			@extend %fontColor1;
+			@extend %fontStrong;
+			padding: 0 2px 0 3px;
+			&:hover {
+				@extend %fontColor1;
+			}
+		}
+	}
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shablon</title>
+			<meta name="keywords" content="">
+			<meta name="description" content="">
+			<meta charset="UTF-8">
+			<meta content="width=device-width, initial-scale=1.0" name="viewport">
+			<link rel="icon" type="images/x-icon" href="images/favicon.ico">
+
+	    	<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			
+			<!-- html5.js for IE8 support of HTML5 elements:
+				 respond.js for bootstrap support in IE8: -->
+			<!--[if IE]>
+				<script type="text/javascript" src="js/html5shiv.js"></script>
+				<script type="text/javascript" src="js/respond.js"></script>
+			<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="topBar">
+				<div class="container inner clearfix">
+					<a href="#" class="logo pull-left" title="Jewelry"><img src="images/store_logo.png" alt="logo"></a>
+					<aside class="rightSide pull-right">
+						<form id="currencySelect" class="currency">
+							<label class="currLabel responsiveHide">CURRENCIES: </label>
+							<select id="currencyOptions" name="currencyOptions">
+								<option selected="selected" value="usd">US dollar</option>
+								<option value="eur">Euro</option>
+							</select>
+						</form>
+						<form id="countrySelect" class="languages">
+							<label class="langLabel responsiveHide">LANGUAGES: </label>
+							<select id="countryOptions" name="countryOptions">
+								<option selected="selected" value="en">English</option>
+								<option value="fr">French</option>
+							</select>
+						</form>
+						<div class="itemCount">
+							<label><a href="#">SHOPPING CART:</a></label>
+							NOW IN YOUR CART <a href="#">0 ITEMS</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<nav class="navbar" role="navigation">
+				<div class="navbar-header">
+					<!-- Responsive Button -->
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					<!-- End -->
+				</div>
+				<div class="collapse navbar-collapse bs-navbar-collapse container">
+					<ul class="nav navbar-nav">
+						<li class="first"><a href="home.html">Home</a><span></span></li><!--
+						--><li><a href="whatsnew.html">What's New?</a><span></span></li><!--
+						--><li class="active"><a href="featured.html">Featured</a><span></span></li><!--
+						--><li><a href="topsellers.html">Top sellers</a><span></span></li><!--
+						--><li><a href="specials.html">Specials</a><span></span></li><!--
+						--><li><a href="manufacturers.html">Manufacturers</a><span></span></li><!--
+						--><li><a href="reviews.html">Reviews</a><span></span></li><!--
+						--><li><a href="contacts.html">Contacts</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="content container clearfix">
+			<aside class="leftPart pull-left">
+				<div class="categoryList">
+					<h2 class="categoryHeading">CATEGORIES</h2>
+					<ul class="categoryGroup">
+						<li><a href="#">Diamond Rings</a></li><!--
+						--><li><a href="#" class="">Earrings<span class="caret"></span></a>
+						</li><!--
+						--><li><a href="#">Pendants</a></li><!--
+						--><li><a href="#">Journey Jewelry</a></li><!--
+						--><li><a href="#">Men's jewelry & gifts</a></li><!--
+						--><li><a href="#">Bracelets</a></li><!--
+						--><li><a href="#">Religious Jewelry</a></li><!--
+						--><li><a href="#">Diamond Rings</a></li><!--
+						--><li><a href="#">Earrings</a></li>
+					</ul>
+				</div>
+				<form class="searchForm ">
+					<label>SEARCH</label>
+					<div class="searchInputButton input-group">
+						<input type="text" class="form-control" placeholder="Enter keywords">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"></button>
+						</span>
+					</div><!-- /input-group -->
+				</form>
+				<div class="tagCloud">
+					<a href="#" class="tgHeading">TAG CLOUD</a>
+					<ul class="tagCloudCategories">
+						<li class="small"><a href="#">accumsan quando</a></li><!--
+						--><li><a href="#" class="">accusata ullamcorper</a></li><!--
+						--><li><a href="#" class="large">accusata ullamcorper</a></li><!--
+						--><li><a href="#">adolescens solet</a></li><!--
+						--><li class="large"><a href="#">brute mentitum</a></li><!--
+						--><li><a href="#" class="small">consectetuer</a></li><!--
+						--><li><a href="#">adipisci</a></li><!--
+						--><li><a href="#" class="large">bomprehensam velit</a></li><!--
+						--><li><a href="#">dissentias in</a></li><!--
+						--><li><a href="#" class="small">debet per mea</a></li>
+					</ul>
+				</div>
+			</aside>
+			<div class="categoryContent pull-right">
+				<!--<div class="underViewItem">
+					<a href="#" class="categoryGroupHeading">Nulla suscipit elementum<a href="#"><img src="images/044.png"></a></a>
+					<div class="smallItem">
+						<a href="#"><img src="images/044.png"></a>
+						<a href="#">Sollicitudin vitae</a>
+					</div>
+				</div>-->
+				<ol class="contentPositionBred">
+					<li><a href="#">Top</a> » </li>
+					<li><a href="#">Catalog</a> » </li>
+					<li class="active"><a href="#">Featured Products</a></li>
+				</ol>
+
+				<h1 class="categoryGroupHeading">Featured Products</h1>
+				<div class="itemsPager clearfix">
+					<div class="displayedpageRange pull-left">
+						These Are The Most For The Money
+					</div>
+					<div class="pull-right">
+						<label>Result Pages:</label>
+						<ul class="pagination myPagination">
+							<li><a href="#" class="dir" title="Previous Page">[ &laquo; <span>Prev</span> ]</a></li><!--
+						 --><li><a href="#" class="ellipsis">...</a></li><!--
+						 --><li><a href="#">5</a></li><!--
+						 --><li><a href="#">6</a></li><!--
+						 --><li><a href="#">7</a></li><!--
+						 --><li><a href="#">8</a></li><!--
+						 --><li><a href="#" class="ellipsis">...</a></li><!--
+						 --><li><a href="#" class="dir" title="Next Page">[ <span>Next</span> &raquo; ]</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="itemsInCategoryHorizontal">
+					<div class="itemHorizontal clearfix">
+						<a href="#" class="itemImage pull-left"><img src="images/041.png" alt="item" class="image"></a>
+						<div class="itemInfo pull-right">
+							<h5 class="date">Date added: <span>Fridey 13 April, 2012</span></h5>
+							<hr>
+							<a href="#" class="itemName">Diamond Flower Earrings</a>
+							<h4 class="manufacturer">Manufacturer: <span>Amet conse ctetur</span></h4>
+							<div class="itemPrice">
+								<label>Price:</label>
+								<span class="itemCurrPrice">$299.99</span>
+							</div>
+							<hr>
+							<div class="moreDescription">We are offering you the unique goods because our product is the real treasure. If you are a true fan, you'll love it. We have a tremendous variety in comparison to all of our competitors. Our collection is like a sea pearl among simple stones. Our de...</div>
+							<hr>
+							<button type="button">DETAILS</button>
+							<a href="#" class="addToCart">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="itemsInCategoryHorizontal">
+					<div class="itemHorizontal clearfix">
+						<a href="#" class="itemImage pull-left"><img src="images/042.png" alt="item" class="image"></a>
+						<div class="itemInfo pull-right">
+							<h5 class="date">Date added: <span>Fridey 13 April, 2012</span></h5>
+							<hr>
+							<a href="#" class="itemName">Diamond Framed Milgrain Ring</a>
+							<h4 class="manufacturer">Manufacturer: <span>Amet conse ctetur</span></h4>
+							<div class="itemPrice">
+								<label>Price:</label>
+								<span class="itemCurrPrice">$499.99</span>
+							</div>
+							<hr>
+							<div class="moreDescription">We are offering you the unique goods because our product is the real treasure. If you are a true fan, you'll love it. We have a tremendous variety in comparison to all of our competitors. Our collection is like a sea pearl among simple stones. Our de...</div>
+							<hr>
+							<button type="button">DETAILS</button>
+							<a href="#" class="addToCart">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="itemsInCategoryHorizontal">
+					<div class="itemHorizontal clearfix">
+						<a href="#" class="itemImage pull-left"><img src="images/045.png" alt="item" class="image"><img src="images/sale.png" alt="sale" class="saleImage"></a>
+						<div class="itemInfo pull-right">
+							<h5 class="date">Date added: <span>Fridey 13 April, 2012</span></h5>
+							<hr>
+							<a href="#" class="itemName">Diamond Knot Ring</a>
+							<h4 class="manufacturer">Manufacturer: <span>Amet conse ctetur</span></h4>
+							<div class="itemPrice">
+								<label>Price:</label>
+								<span class="itemOldPrice">$42.00</span>
+								<span class="itemCurrPrice">$5.99</span>
+							</div>
+							<hr>
+							<div class="moreDescription">We are offering you the unique goods because our product is the real treasure. If you are a true fan, you'll love it. We have a tremendous variety in comparison to all of our competitors. Our collection is like a sea pearl among simple stones. Our de...</div>
+							<hr>
+							<button type="button">DETAILS</button>
+							<a href="#" class="addToCart">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+				<div class="itemsInCategoryHorizontal">
+					<div class="itemHorizontal clearfix">
+						<a href="#" class="itemImage pull-left"><img src="images/046.png" alt="item" class="image"></a>
+						<div class="itemInfo pull-right">
+							<h5 class="date">Date added: <span>Fridey 13 April, 2012</span></h5>
+							<hr>
+							<a href="#" class="itemName">Diamond Pavé Square Pendant</a>
+							<h4 class="manufacturer">Manufacturer: <span>Amet conse ctetur</span></h4>
+							<div class="itemPrice">
+								<label>Price:</label>
+								<span class="itemCurrPrice">$49.99</span>
+							</div>
+							<hr>
+							<div class="moreDescription">We are offering you the unique goods because our product is the real treasure. If you are a true fan, you'll love it. We have a tremendous variety in comparison to all of our competitors. Our collection is like a sea pearl among simple stones. Our de...</div>
+							<hr>
+							<button type="button">DETAILS</button>
+							<a href="#" class="addToCart">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="itemsPager clearfix">
+					<div class="displayedpageRange pull-left">
+						These Are The Most For The Money
+					</div>
+					<div class="pull-right">
+						<label>Result Pages:</label>
+						<ul class="pagination myPagination">
+							<li><a href="#" class="dir" title="Previous Page">[ &laquo; <span>Prev</span> ]</a></li><!--
+						 --><li><a href="#" class="ellipsis">...</a></li><!--
+						 --><li><a href="#">5</a></li><!--
+						 --><li><a href="#">6</a></li><!--
+						 --><li><a href="#">7</a></li><!--
+						 --><li><a href="#">8</a></li><!--
+						 --><li><a href="#" class="ellipsis">...</a></li><!--
+						 --><li><a href="#" class="dir" title="Next Page">[ <span>Next</span> &raquo; ]</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container">
+			<nav role="navigation">
+				<div class="navbar-header">
+					<!-- Responsive Button -->
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse_footer">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					<!-- End -->
+				</div>
+				<div class="collapse navbar-collapse bs-navbar-collapse_footer container">
+					<ul class="footNavigation">
+						<li><a href="#">Home</a></li>
+						<li class="active"><a href="#">Featured</a></li>
+						<li><a href="#">What's New?</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">Manufacturers</a></li>
+						<li><a href="#">Top sellers</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Advanced Search</a></li>
+						<li><a href="#">Log in</a></li>
+						<li><a href="#">Shipping & Returns</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="paypalVisaMaster">
+				<a href="#" class="paypal"></a>	
+				<a href="#" class="visa"></a>	
+				<a href="#" class="mastercard"></a>	
+			</div>
+			<div class="copyright"><a href="#">Jewelry</a> © 2014 <a href="#">Privacy Notice </a>|<a href="#"> Conditions of Use</a></div>
+
+		</footer>
+
+		<!-- General Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- End -->
+	</body>
+</html>

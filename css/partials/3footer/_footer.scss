@@ -1,0 +1,103 @@
+/* Style for FOOTER ===============
+==========================================*/
+
+
+footer {
+	div {
+		@extend %fontColor6;
+		font-size: 14px;
+		a {
+			@extend %fontColor6;
+			text-decoration: none;
+			&:hover {
+				@extend %fontColor4;
+				opacity: 1;
+			}
+		}		
+	
+	}
+}
+.footNavigation {
+	display: block;
+	li {
+		display: inline-block;
+		&.active {
+			a {
+				@extend %fontColor3;
+			}
+		}
+		a {
+			display: inline-block;
+			@extend %fontStrong;
+			@extend %fontColor4;
+			@extend %textTransformUpper;
+			font-size: 12px;
+			line-height: 17px;
+			padding: 5px;
+			&:hover {
+				@extend %fontColor3;
+				@extend %textDecorNone;
+			}
+		}
+	}
+}
+
+.paypalVisaMaster {
+	@extend %positionRelative;
+	background: url(../images/paypal.png) no-repeat;
+	opacity: 1;
+	width: 126px;
+	height: 20px;
+	a {
+		display: block;
+		height: 20px;
+		
+	}
+	.paypal {
+		@extend %positionAbsolute;
+		left: 0;
+		top: 0;
+		width: 60px;
+		
+	}
+	.visa {
+		@extend %positionAbsolute;
+		left: 63px;
+		top: 0;
+		width: 30px;
+	}
+	.mastercard {
+		@extend %positionAbsolute;
+		left: 94px;
+		top: 0;
+		width: 30px;
+	}
+}
+.copyright {
+	margin-bottom: 30px;
+	@extend %textAlignRight;
+}
+
+@media (max-width: 979px) {
+	.footNavigation {
+		float: none !important;
+		margin: 0;
+		li {
+			width: 100%;
+			a {
+				width: 100%;
+				padding: 10px;
+				&:hover {
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	
+}
+@media (max-width: 480px) {
+
+}

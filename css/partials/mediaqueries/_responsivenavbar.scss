@@ -1,0 +1,48 @@
+/* media style for responsive Navbar */
+
+@media screen and (min-width: 980px) {
+	.navbar {
+		background: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar-collapse {
+		&.collapse {
+			display: none !important;
+			&.in {
+				display: block !important;
+			}
+		}
+	}
+}
+@media (max-width: 979px) {
+	.navbar-header {
+		float: none;
+		.navbar-toggle {
+			display: block;
+		}
+	}
+	.navbar-collapse {
+		max-height: inherit;
+	}
+	.nav {
+		float: none !important;
+		margin: 0;
+		li {
+			width: 100%;
+			a {
+				//display: block;
+				padding: 10px;
+				background: none;
+			}
+			&.first {
+				a {
+					//padding: 10px;
+				}
+			}
+			&:hover, &:active, &:focus {
+				background-color: #ccc;
+			}
+		}
+	}
+}

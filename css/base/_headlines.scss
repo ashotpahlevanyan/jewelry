@@ -1,0 +1,53 @@
+/*
+
+	headlines.scss
+	* CSS Headlines style
+
+*/
+
+/* headline for content : Content -> Pupular Products, ... */
+h1 {
+	//@extend %fontColor6;
+	font-size: 22px;
+	font-size: 2.2rem;
+	line-height: 30px;
+	padding: 0 11px;
+}
+
+/* headline for  Categories */
+h2 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 20px;
+}
+
+/* headlines for  New Customers, Returned Customers, */
+h3 {
+	@extend %fontStrong;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 15px;
+}
+
+/* headlines for  "I am a new customer"*/
+h4 {
+	font-size: 12px;
+	font-size: 1.2em;
+	line-height: 14px;
+}
+
+/* headlines for  Date Added, Displaying Items 1 to N (...)*/
+h5 {
+	font-size: 11px;
+	font-size: 1.1rem;
+	line-height: 13px;
+}
+
+
+/* headlines for  */
+h6 {
+	@extend %fontStrong;
+	font-size: 8px;
+	font-size: 0.8rem;
+	line-height: 10px;
+}

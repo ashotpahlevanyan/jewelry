@@ -1,0 +1,104 @@
+/* Style for SLIDER ===============
+==========================================*/
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel.fade {
+	opacity: 1;
+	.item {
+		display:block !important;
+		@extend %transitionOpacity1;
+		@extend %positionAbsolute;
+		left: 0 !important;
+		opacity: 0.5;
+		top:0;
+		margin: 0 5px;
+		width: 100%;
+		z-index:1;
+		&:first-child {
+			@extend %positionRelative;
+			top: auto;
+		}
+
+		&.active {
+			opacity: 1;
+			@extend %transitionOpacity2;
+			z-index:2;
+		}
+	}
+}
+
+.slider {
+	.left{
+		opacity: 1;
+		@extend %floatLeft;
+		@include border-radius(26.5px);
+		width: 51px;
+		height: 51px;
+		background: url(../images/nivo-nav.png);
+		top: 44%;
+		left: 5px;
+		z-index: 2;
+	}
+	.right{
+		opacity: 1;
+		@extend %floatRight;
+		@include border-radius(26.5px);
+		width: 51px;
+		height: 51px;
+		background: url(../images/nivo-nav.png) no-repeat;
+		background-position: -61px 0;
+		top:44%;
+		right: 5px;
+		z-index: 2;
+	}
+	&:hover {
+		.left, .right {
+			visibility: visible;
+		}
+	}
+	.left:hover, .right:hover {
+		opacity: 0.7;
+	}
+}
+
+.divider {
+	@include linear-gradient(#fff, #ddd, 1);
+	height: 16px;
+}
+
+
+
+/* Responsive Slider ================================================
+===================================================================*/
+
+@media (max-width: 979px) {
+	
+} 
+@media (max-width: 767px) {
+	
+}
+@media (max-width: 480px) {
+	.slider {
+		.left{
+			//@extend %visibilityVisible;
+			visibility: visible;
+			@include border-radius(10.5px);
+			width: 21px;
+			height: 21px;
+			background: url(../images/nivo-nav_small_left.png);
+		}
+		.right{
+			//@extend %visibilityVisible;
+			visibility: visible;
+			
+			@include border-radius(10.5px);
+			width: 21px;
+			height: 21px;
+			background: url(../images/nivo-nav_small_right.png);
+			background-position: 0 0;
+		}
+	}
+} 

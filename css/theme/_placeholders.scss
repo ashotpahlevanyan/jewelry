@@ -1,0 +1,325 @@
+/* placeholders for changable elements 
+=====================================*/
+
+%fontColor1 {
+	/* font color for logo title link */
+	color: #838383;
+}
+
+%fontColor2 {
+	/* font color for logo title link */
+	color: #fff;
+}
+
+%fontColor3 {
+	/* font color for logo title link */
+	color: #55C3C1;
+}
+
+%fontColor4 {
+	/* font color for logo title link */
+	color: #000;
+}
+
+%fontColor5 {
+	/* font color for logo title link */
+	color: #aaa;
+}
+
+%fontColor6 {
+	/* font color for logo title link */
+	color: #666;
+}
+
+%fontColor7 {
+	/* font color for logo title link */
+	color: #999;
+}
+
+%bgColor1 {
+	/* background color for navbar */
+	 background-color: #fff;
+}
+
+%bgColor2 {
+	/* background color for icon-bar */
+	 background-color: #563D7C;
+}
+
+%bgColor4 {
+	/* background color for TopBar */
+	 @include linear-gradient(#000, #333, 1);
+}
+
+%bgColor5 {
+	/* background color for TopBar */
+	 @include linear-gradient(#F6F6F6, #fff, 1);
+}
+%bgColor6 {
+	/* background color for TopBar */
+	 @include linear-gradient(#fff, #F6F6F6, 1);
+}
+
+%bgColor7 {
+	background-color: #F6F6F6;
+}
+
+%bgColor8 {
+	/* background color for TopBar */
+	 background-color: #1e1e1e;
+}
+
+%borderColor1 {
+	/* border color for navbar-toggle*/
+	border-color:  #55C3C1;
+}
+%fontSize1 {
+	font-size: 12px;
+}
+
+%fontSize2 {
+	font-size: 15px;
+}
+
+%borderRadius5px {
+	border-radius: 5px;
+}
+
+%transitionOpacity1 {
+	-moz-transition: opacity ease-in-out 2s;
+	-o-transition: opacity ease-in-out 2s;
+	-webkit-transition: opacity ease-in-out 2s;
+	transition: opacity ease-in-out 2s;
+}
+
+%transitionOpacity2 {
+	-moz-transition: opacity ease-in-out 0.6s;
+	-o-transition: opacity ease-in-out 0.6s;
+	-webkit-transition: opacity ease-in-out 0.6s;
+	transition: opacity ease-in-out 0.6s;
+}
+
+/* placeholders for repeat elements 
+=====================================*/
+%arialHelveticaSans {
+	/* font family for body, navbar */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+%tahoma {
+	/* font family for logo link, navbar links */
+	font-family: tahoma;
+}
+
+%PTSB { 
+	font-family: PTSB_font, Tahoma, sans-serif;
+}
+
+%fontStrong {
+	/* font weight for any text */
+	font-weight: bold;
+}
+
+%fontNormal {
+	/* font weight for any text */
+	font-weight: normal;
+}
+
+%textTransformUpper {
+	/* text transform for any text*/
+	text-transform: uppercase;
+}
+
+%textTransformLower {
+	/* text transform for any text*/
+	text-transform: lowercase;
+}
+
+%overflowScroll {
+	/* overflow scroll for any box */
+	overflow: scroll;
+}
+%overflowScrollY {
+	/* overflow scroll for any box */
+	overflow-y: scroll;
+}
+%overflowScrollX {
+	/* overflow scroll for any box */
+	overflow-x: scroll;
+}
+
+%overflowHidden {
+	/* overflow hidden for any box */
+	overflow: hidden;
+}
+
+%textDecorNone {
+	/* text decoration for any text */
+	text-decoration: none;
+}
+	
+%textDecorUnderline {
+	/* text decoration for any text */
+	text-decoration: underline;
+}
+
+%textAlignLeft {
+	/* text decoration for any text */
+	text-align: left;
+}
+
+%textAlignRight {
+	/* text decoration for any text */
+	text-align: right;
+}
+
+%listStyleNone {
+	/* list style for any list */
+	list-style: none;
+}
+
+%floatLeft {
+	/* float for any block */
+	float: left;
+}
+
+%floatRight {
+	/* float for any block */
+	float: right;
+}
+
+%borderStyleSolid {
+	/* border style for any element */
+	border-style: solid;
+}
+
+%borderNone {
+	/* border for any element */
+	border: none;
+}
+
+%borderInset {
+	/* border for any element */
+	border: inset;
+}
+
+%borderOutset {
+	/* border for any element */
+	border: outset;
+}
+
+%borderSolid {
+	/* border for any element */
+	border: solid;
+}
+
+%borderDashed {
+	/* border for any element */
+	border: dashed;
+}
+
+%borderDotted {
+	/* border for any element */
+	border: dotted;
+}
+
+%positionAbsolute {
+	/* position for any element */
+	position: absolute;
+}
+
+%positionRelative {
+	/* position for any element */
+	position: relative;
+}
+
+%positionCenter {
+ 	/* position center for any element*/
+	margin: 0 auto;
+}
+
+%boxSizingBorderBox {
+ /* box sizing for all element in pages */
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%bgPosNoRepeat {
+	background-position: center center;
+	background-repeat: no-repeat no-repeat;
+}
+
+%bgColorTransparent {
+	/* background color transparent*/
+	background-color: transparent; 
+}
+
+%bgImageNone {
+	/* background image none*/
+	background-image:  none; 
+}
+
+%cursorPointer {
+	cursor: pointer;
+}
+
+%displayInlineBlock {
+	/*display style for any element*/
+	display: inline-block;
+}
+
+%displayBlock {
+	/*display style for any element*/
+	display: block;
+}
+
+%displayNone {
+	/*display style for any element*/
+	display: none;
+}
+
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%verticalAlignMiddle {
+	/* vertical align for any element*/
+	vertical-align: middle;
+}
+%verticalAlignSub {
+	/* vertical align for any element*/
+	vertical-align: sub;
+}
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%vertAlignTextTop {
+	/* vertical align for any element*/
+	vertical-align: text-top;
+}
+%vertAlignBaseline {
+	/* vertical align for any element*/
+	vertical-align: baseline;
+}
+
+%visibilityHidden {
+	visibility: hidden;
+}
+
+%visibilityVisible {
+	visibility: visible;
+}
+
+
+@media (max-width: 480px) {
+
+	%visibilityHidden {
+		visibility: hidden;
+	}
+
+	%visibilityVisible {
+		visibility: visible;
+	}
+}

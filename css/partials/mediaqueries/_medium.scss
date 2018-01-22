@@ -1,0 +1,106 @@
+/* Style for Medium screens ===============
+==========================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	body {
+		.container {
+			width: 100% !important;
+		}		
+	}
+	.top {
+		height: 90px;
+		
+		.shoppingHeader{
+			display: block;
+			float: right;
+			margin-top: 0px;
+			margin-right: 8px;
+			label {
+				//display: none;
+			}
+		}
+		
+		.langCurr {
+			display: inline-block;
+			float: right;
+			.currency {
+				margin-top: 0px;
+				display: block;
+			}
+			.languages {
+				margin-top: 5px;
+				display: block;
+			}
+			.langLabel, .currLabel {
+				display: none;
+			}
+		}
+
+		.inCard {
+			display: none;
+		}
+		.btn-group {
+			display: block;
+			.btn-default {
+			margin-top: 5px;	
+			}
+		}
+		
+		.logo {
+			background: url(../images/store_logo_small.png)  no-repeat;
+			width: 55%;
+			height: 21px;
+			display: inline-block;
+			margin: 30px 10px 0 10px;
+			float: left;
+		}
+	}	
+	#langDDM {
+		margin-top: 62px;
+	}
+	#currDDM {
+		margin-top: 35px;
+	}
+
+	.navbar-toggle {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	}
+
+	.navbar {
+	//margin-bottom: -1px;
+	//background: url("../images/row_2_bg.gif") repeat-x scroll 0 100% #FFFFFF;
+	.nav {
+		margin-left: 0px;
+
+		width: 100%;
+		li {
+			display: block;
+			border-top: 1px solid #ccc;
+			a {
+				padding: 10px;
+				background: none;
+			}
+			a:hover {
+				margin-left: 20px;
+				-moz-transition: margin-left ease-in-out .4s;
+				-webkit-transition: margin-left ease-in-out 0.4s;
+				-o-transition: margin-left ease-in-out .4s;
+				transition: margin-left ease-in-out .4s;
+			}
+
+		}
+		li.first {
+			margin-left: 0px;
+		}
+		li:hover, li:active, li:focus {
+			background-color: 	#85FF5C;
+			-moz-transition: background-color ease-in-out .4s;
+			-webkit-transition: background-color ease-in-out 0.4s;
+			-o-transition: background-color ease-in-out .4s;
+			transition: background-color ease-in-out .4s;
+		}
+	}
+}
+}
+
